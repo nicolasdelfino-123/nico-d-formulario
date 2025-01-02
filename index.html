@@ -19,36 +19,47 @@
   </head>
   <body>
     <div class="container-fluid d-flex row">
-      <div class="container-custom flex-column">
-        <div class="head">
-          <p>Payment form example</p>
+      <div class="container-custom flex-column w-100">
+        <div class="head bg-secondary">
+          <h3><b>Payment form example</b></h3>
         </div>
         <div
           class="container-aviso border border-primary bg-primary d-flex align-items-center justify-content-center"
           style="height: 80px"
         >
-          <div class="advertencia">
-            <p>Some fields are missing</p>
+          <div class="advertencia d-flex">
+            <p class="align-items-center justify-content-center">
+              Some fields are missing
+            </p>
+          </div>
+        </div>
+
+        <!-- primer columna de campos -->
+        <div
+          class="container-custom row align-items-center justify-content-center bg-secondary overflow-hidden"
+        >
+          <div class="col-5">
+            <label for="">Card #</label>
+            <input
+              class="form-control"
+              type="text"
+              placeholder="XXXXXXXXXXXXXXXXXXX"
+            />
+          </div>
+          <div class="col-3">
+            <label for="">CVC #</label>
+            <input class="form-control" type="text" placeholder="0000" />
+          </div>
+          <div class="col-4">
+            <label for="">Amount</label>
+            <input
+              class="form-control col-4"
+              type="text"
+              placeholder="Amount"
+            />
           </div>
         </div>
       </div>
-
-      <!-- primer columna de campos -->
-      <div class="first-column row d-flex align-items-center justify-content-center bg-primary">
-        <div class="d-flex flex-row">
-        <div class="general d-flex flex-column">
-          <label for="">Card #</label>
-          <input class="col-4" type="text" placeholder="XXXXXXXXXXXXXXXXXXX" />
-        </div>
-        <div class="general d-flex flex-column">
-            <label for="">CVC #</label>
-             <input class="col-4" type="text" placeholder="0000" />
-         </div>
-        <div class="general d-flex flex-column">
-          <label for="">Amount</label>
-          <input class="col-4" type="text" placeholder="Amount" />
-        </div>
-    </div>
     </div>
 
     <script

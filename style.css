@@ -1,20 +1,27 @@
 .container-fluid {
-  border: 1px solid rgb(113, 199, 27);
-  max-width: 1300px;
+  border: 5px solid rgb(113, 199, 27);
+  max-width: 1200px;
+  padding: 0;
+  margin: 0 auto;
 }
 
 .head {
-  border: 1px solid rgb(19, 27, 144);
+  border: 3px solid rgb(19, 27, 144);
+  width: 100%;
 }
 
 .advertencia {
   max-height: 50px;
-  width: 1200px;
+  width: 1150px;
   border-radius: 3px;
   background-color: #f8d7da;
 }
 
-.container-fluid > div {
-  border: 1px solid rgb(199, 27, 130);
-  width: 100%;
+.container-custom {
+  width: 1150px;
+}
+
+.container-fluid > .container-custom {
+  padding-left: 0;
+  padding-right: 0;
 }
