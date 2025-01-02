@@ -1,15 +1,20 @@
-.container-fluid{
-    border: 1px solid rgb(113, 199, 27);
+.container-fluid {
+  border: 1px solid rgb(113, 199, 27);
+  max-width: 1300px;
 }
 
-.head{
-    border: 1px solid rgb(19, 27, 144);
+.head {
+  border: 1px solid rgb(19, 27, 144);
 }
 
-.advertencia{
-    border: 1px solid red;
+.advertencia {
+  max-height: 50px;
+  width: 1200px;
+  border-radius: 3px;
+  background-color: #f8d7da;
 }
 
-.container-custom{
-    max-width: 1200px;
+.container-fluid > div {
+  border: 1px solid rgb(199, 27, 130);
+  width: 100%;
 }
