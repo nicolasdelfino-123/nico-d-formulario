@@ -1,8 +1,9 @@
 .container-fluid {
-  border: 5px solid rgb(113, 199, 27);
   max-width: 1200px;
   margin: 0;
   padding: 0;
+  border: 1px solid black;
+  border-radius: 3px;
 }
 
 .advertencia {
@@ -10,23 +11,43 @@
   width: 100%;
   border-radius: 3px;
   background-color: #f8d7da;
+  margin-right: 23px;
+  margin-left: 23px;
+  padding-left: 10px;
 }
 
 .head {
-  border: 3px solid rgb(19, 27, 144);
   width: 100%;
+  background-color: rgb(245, 240, 240);
+  height: 60px;
+}
+
+.footer {
+  background-color: rgb(245, 240, 240);
+  height: 60px;
 }
 
 .container-custom {
-  border: 3px dashed red;
   padding: 0;
   margin: 0;
 }
 .container-aviso {
-  border: 2px dashed blue;
   width: 100%;
 }
 
-form {
-  background-color: blueviolet;
+button {
+  height: 40px;
+}
+
+.lista {
+  max-width: 270px;
+  padding-top: 5px;
+  border-radius: 3px;
+  padding-bottom: 5px;
+  padding-left: 8px;
+  padding-right: 5px;
+}
+
+.lista .form-check-input {
+  transform: scale(0.6); /* Ajusta el tamaño del radio */
 }

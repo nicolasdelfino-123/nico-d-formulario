@@ -18,18 +18,18 @@
     <title>Document</title>
   </head>
   <body>
-    <body>
-        <div class="container-fluid d-flex row">
+    <body class="d-flex justify-content-center">
+        <div class="container-fluid d-flex row justify-content-center">
           <div class="container-custom flex-column w-100">
-            <div class="head bg-secondary">
-              <h3><b>Payment form example</b></h3>
+            <div class="head d-flex align-items-center ps-4">
+              <h3 style="color: #23272a;">Payment form example</h3>
             </div>
             <div
-              class="container-aviso border border-primary bg-primary d-flex align-items-center justify-content-center"
-              style="height: 80px"
+              class="container-aviso d-flex align-items-center"
+              style="height: 90px"
             >
-              <div class="advertencia d-flex">
-                <p class="d-flex align-items-center justify-content-center">
+              <div class="advertencia d-flex align-items-center">
+                <p class="d-flex pt-3">
                   Some fields are missing
                 </p>
               </div>
@@ -37,15 +37,15 @@
         </div>
 
         <form class="d-flex row">
-            <div class="mb-3 col">
-              <label for="exampleInputEmail1" class="form-label"><b>Card</b></label>
+            <div class="mb-3 col-5">
+              <label for="exampleInputEmail1" class="form-label"><b>Card #</b></label>
               <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="XXXXXXXXXXXXXXXXXXX">
             </div>
-            <div class="mb-3 col">
-              <label for="exampleInputPassword1" class="form-label"><b>CVC</b></label>
+            <div class="mb-3 col-3">
+              <label for="exampleInputPassword1" class="form-label"><b>CVC #</b></label>
               <input type="text" class="form-control" id="exampleInputPassword1" placeholder="0000">
             </div>
-            <div class="mb-3 col">
+            <div class="mb-3 col-4">
                 <label for="exampleInputPassword1" class="form-label"><b>Amount</b></label>
                 <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Amount">
               </div>
@@ -61,23 +61,24 @@
               </div>
           </form>
           <form class="row d-flex">
-            <div class="mb-3 col">
+            <div class="mb-3 col-6">
                 <label for="exampleInputEmail1" class="form-label"><b>City</b></label>
                 <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
               </div>
-              <div class="mb-3 col">
+              <div class="mb-3 col-3">
                 <label for="exampleInputPassword1" class="form-label"><b>State</b></label>
-                <input type="text" class="form-control" id="exampleInputPassword1">
+                <input type="number" class="form-control" id="exampleInputPassword1" placeholder="Pick a State"
+                >
               </div>
-              <div class="mb-3 col">
+              <div class="mb-3 col-3">
                   <label for="exampleInputPassword1" class="form-label"><b>Postal Code</b></label>
-                  <input type="text" class="form-control" id="exampleInputPassword1">
+                  <input type="text" class="form-control" id="exampleInputPassword1" readonly>
                 </div>
           </form>
           <form class="row d-flex">
             <div class="mb-3 col">
                 <label for="exampleInputPassword1" class="form-label"><b>We Accept</b></label>
-                <ul class="d-flex align-items-center list-unstyled">
+                <ul class="lista d-flex align-items-center list-unstyled  bg-secondary">
                     <li class="me-3">
                       <input type="radio" name="credit-card" class="form-check-input me-2" />
                       <i class="fa-brands fa-cc-mastercard"></i>
@@ -103,15 +104,16 @@
                   id="exampleInputPassword1" 
                   class="form-control" 
                   rows="4" 
-                  placeholder="Write your message here..."
+                
                 ></textarea>
+                <span style="font-size: small;">Add any notes here</span>
               </div>
               
           </form>
-          <div class="row bg-secondary d-flex">
-            <div class="col d-flex justify-content-end">
-                <button type="button" class="btn btn-secondary">Secondary</button>
-                <button type="button" class="btn btn-primary">Primary</button>
+          <div class="footer row d-flex">
+            <div class="col d-flex justify-content-end align-items-center gap-2">
+                <button type="button" class="btn btn-secondary px-4">Cancel</button>
+                <button type="button" class="btn btn-primary">Send</button>
             </div>    
             </div>
         </div>
