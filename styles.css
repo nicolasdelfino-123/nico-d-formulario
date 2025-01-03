@@ -1,0 +1,32 @@
+.container-fluid {
+  border: 5px solid rgb(113, 199, 27);
+  max-width: 1200px;
+  margin: 0;
+  padding: 0;
+}
+
+.advertencia {
+  max-height: 50px;
+  width: 100%;
+  border-radius: 3px;
+  background-color: #f8d7da;
+}
+
+.head {
+  border: 3px solid rgb(19, 27, 144);
+  width: 100%;
+}
+
+.container-custom {
+  border: 3px dashed red;
+  padding: 0;
+  margin: 0;
+}
+.container-aviso {
+  border: 2px dashed blue;
+  width: 100%;
+}
+
+form {
+  background-color: blueviolet;
+}
